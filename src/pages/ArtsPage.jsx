@@ -45,7 +45,7 @@ const ArtsPage = () => {
 
   return (
     <>
-      <Header colors={{ primary: '#1a113c', secondary: '#ffffff' }} />
+      <Header isHomePage={false} />
       <div className={styles.artsPage}>
         <Masonry
           breakpointCols={breakpointColumnsObj}
@@ -66,7 +66,7 @@ const ArtsPage = () => {
         </Masonry>
         {hasMore && <div className={styles.loading}>Carregando mais...</div>}
       </div>
-      <Footer colors={{ primary: '#1a113c', secondary: '#ffffff' }} />
+      <Footer />
       <Outlet context={{ arts: artData }} />
     </>
   );

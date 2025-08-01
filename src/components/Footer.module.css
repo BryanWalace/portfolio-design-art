@@ -8,4 +8,6 @@
   text-align: center;
   font-size: 0.875rem;
   transition: background-color 1s ease, color 1s ease;
+  background-color: #1a113c;
+  color: #ffffff;
 }

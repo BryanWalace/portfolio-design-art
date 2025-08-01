@@ -1,4 +1,3 @@
-// Importe todas as suas imagens de arte aqui
 import xiaoImg from '../assets/arts/xiao.png';
 import dilucImg from '../assets/arts/diluc.png';
 import rosaImg from '../assets/arts/rosa.png';
@@ -12,7 +11,7 @@ export const artData = [
     description: 'Ilustração do personagem Xiao, de Genshin Impact.', 
     image: xiaoImg,
     primaryColor: '#A4EFCE', 
-    secondaryColor: '#000000' 
+    secondaryColor: '#000000'
   },
   { 
     id: 'diluc', 
@@ -28,7 +27,7 @@ export const artData = [
     description: 'Criação de ambiente fantástico com personagem original.', 
     image: rosaImg,
     primaryColor: '#99EAE9',
-    secondaryColor: '#050505' 
+    secondaryColor: '#050505'
   },
   {
     id: 'venti',

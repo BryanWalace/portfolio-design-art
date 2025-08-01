@@ -37,7 +37,7 @@ const CosplayPage = () => {
 
   return (
     <>
-      <Header colors={{ primary: '#1a113c', secondary: '#ffffff' }} />
+      <Header isHomePage={false} />
       <div className={styles.cosplayPage}>
         <div className={styles.cosplayGrid}>
           {visibleCosplays.map((cosplay) => (
@@ -55,7 +55,7 @@ const CosplayPage = () => {
         </div>
         {hasMore && <div className={styles.loading}>Carregando mais...</div>}
       </div>
-      <Footer colors={{ primary: '#1a113c', secondary: '#ffffff' }} />
+      <Footer />
       <Outlet context={{ cosplays: cosplayData }} />
     </>
   );

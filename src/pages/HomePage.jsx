@@ -65,15 +65,23 @@ const HomePage = () => {
     setTimeout(() => { isScrolling.current = false; }, 1200);
   };
   
-  const handleColorChange = (artColors) => {
+  const handleColorChange = (artObject) => {
     if (currentSectionIndex === 1) {
-      setColors({ primary: artColors.primaryColor, secondary: artColors.secondaryColor });
+      setColors({ 
+        primary: artObject.primaryColor, 
+        secondary: artObject.secondaryColor,
+      });
     }
   };
 
   return (
     <div ref={containerRef} className={styles.mainContainer}>
-      <Header colors={colors} scrollToSection={scrollToSection} isHomePage={true} />
+      <Header 
+        colors={colors} 
+        scrollToSection={scrollToSection} 
+        isHomePage={true}
+        currentSectionIndex={currentSectionIndex}
+      />
       <main className={styles.sectionsWrapper} style={{ transform: `translateY(-${currentSectionIndex * 100}vh)` }}>
         <div className={styles.section}><Hero /></div>
         <div className={styles.section}><Arts onColorChange={handleColorChange} /></div>

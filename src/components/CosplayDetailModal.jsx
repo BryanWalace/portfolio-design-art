@@ -3,7 +3,7 @@ import { useParams, useNavigate, useOutletContext } from 'react-router-dom';
 import styles from './ArtDetailModal.module.css';
 import { X, ChevronLeft, ChevronRight, Share2, Twitter, Instagram, Linkedin } from 'lucide-react';
 
-import behanceIconPng from '../assets/icons/behance-icon-white.png';
+import behanceIconPng from '../assets/icons/behance-icon.png';
 import { socialLinks } from '../data/socialLinks';
 
 const CosplayDetailModal = () => {
