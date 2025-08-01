@@ -1,0 +1,60 @@
+.artsPage {
+  background-color: #1a113c;
+  padding: 8rem 2rem 5rem 2rem;
+  min-height: 100vh;
+}
+
+.myMasonryGrid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.myMasonryGridColumn {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.artLink {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.artLink img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.artLink:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.artLink:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
