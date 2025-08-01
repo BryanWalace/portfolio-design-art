@@ -20,7 +20,7 @@ const Header = ({ colors, scrollToSection, isHomePage }) => {
             <>
               <Link to="/">Main</Link>
               <NavLink to="/arts" className={({ isActive }) => (isActive ? styles.activeLink : '')}>Arts</NavLink>
-              <Link to="/" state={{ scrollTo: 'cosplay' }}>Cosplay</Link>
+              <NavLink to="/cosplay" className={({isActive}) => isActive ? styles.activeLink : ''}>Cosplay</NavLink>
             </>
           )}
           <a href="#">Contato</a>

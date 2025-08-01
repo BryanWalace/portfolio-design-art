@@ -6,9 +6,10 @@ Repositório para o site de portfólio interativo. O projeto foi iniciado utiliz
 
 * **Navegação Multi-Página:** O site agora suporta múltiplas páginas graças ao `react-router-dom`.
 * **Página Principal Interativa:** Uma experiência de usuário fluida com navegação por scroll que leva a seções de tela cheia (`Hero`, `Arts` e `Cosplay`).
-* **Galeria de Artes Completa:** Uma página dedicada `/arts` com uma galeria de imagens responsiva em estilo "masonry" (Pinterest).
-* **Visualização de Arte Detalhada (Lightbox):** Ao clicar em uma arte, um modal em tela cheia é aberto, com navegação entre as obras e um fundo dinâmico que se adapta às cores da imagem.
-* **Tipografia Customizada:** Usa a fonte "Thunder" para criar uma identidade visual forte e impactante.
+* **Galerias Otimizadas:** As páginas de Artes e Cosplay usam "infinite scroll" (lazy loading), carregando imagens conforme o usuário rola a página para um melhor desempenho.
+* **Layouts de Galeria Customizados:** A página de Artes usa um layout "masonry" e a de Cosplay usa uma grade CSS assimétrica para uma apresentação visual única.
+* **Visualização Detalhada (Lightbox):** Ao clicar em uma imagem, um modal em tela cheia é aberto, com navegação entre as obras e um fundo dinâmico na galeria de artes.
+* **UI Dinâmica e Animada:** Efeito de gradiente animado no título principal e transições suaves em toda a aplicação.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -45,6 +46,15 @@ Repositório para o site de portfólio interativo. O projeto foi iniciado utiliz
 
 ## 📜 Histórico de Versões (Changelog)
 
+### **v1.2.0** - Otimização de Galerias e Melhorias de UI (01 de Agosto de 2025)
+
+* **feat:** Implementa "infinite scroll" (lazy loading) nas páginas de galeria (`/arts` e `/cosplay`).
+* **style:** Adiciona efeito de gradiente animado ao título principal na `Hero Section`.
+* **feat:** Cria a página de galeria de `Cosplay` com layout de grade customizado (CSS Grid).
+* **fix:** Corrige múltiplos erros de importação de componentes e hooks do React (`useEffect`, `useLocation`, etc.).
+* **chore:** Atualiza o favicon do site para o logo personalizado.
+* **style:** Remove a fonte customizada 'Thunder' temporariamente.
+
 ### **v1.1.0** - Galeria de Artes e Roteamento (01 de Agosto de 2025)
 
 * **feat:** Adiciona `react-router-dom` e refatora a estrutura para suportar múltiplas páginas.
@@ -53,12 +63,12 @@ Repositório para o site de portfólio interativo. O projeto foi iniciado utiliz
 * **refactor:** Centraliza os dados das artes e links sociais na pasta `/data`.
 * **build:** Adiciona a dependência `react-masonry-css`.
 
-### **v1.0.0** - Lançamento das Funcionalidades Principais (01 de Agosto de 2025)
+### **v1.0.0** - Lançamento das Funcionalidades Principais (01 de Agosto de - 2025)
 
 * **feat:** Implementa os componentes de layout `Header` e `Footer`.
 * **feat:** Adiciona as três seções principais na página inicial: `Hero`, `Arts` e `Cosplay`.
 * **feat:** Configura a navegação por scroll e as interações das galerias (mudança de cor e acordeão).
-* **style:** Adiciona todos os estilos dos componentes via CSS Modules e integra a fonte customizada.
+* **style:** Adiciona todos os estilos dos componentes via CSS Modules.
 * **refactor:** Adiciona o uso de imagens locais nas galerias.
 
 ### **v0.1.0** - Estrutura Inicial do Projeto (01 de Agosto de 2025)
