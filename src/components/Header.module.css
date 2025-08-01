@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  font-size: 1.125rem;
+  transition: opacity 0.3s;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}

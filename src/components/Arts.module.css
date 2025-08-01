@@ -1,0 +1,109 @@
+.artsSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 1s ease;
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navButton {
+  position: absolute;
+  z-index: 30;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.prevButton {
+  left: 1rem;
+}
+
+.nextButton {
+  right: 1rem;
+}
+
+.imageWrapper {
+  width: 80%;
+  height: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artImage {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.artImage.inactive {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.artImage.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.infoCard {
+  position: absolute;
+  bottom: 5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 90%;
+  width: 500px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: fade-in-up 0.7s ease-in-out;
+}
+
+.infoCard h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.infoCard p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 768px) {
+  .prevButton { left: 4rem; }
+  .nextButton { right: 4rem; }
+}

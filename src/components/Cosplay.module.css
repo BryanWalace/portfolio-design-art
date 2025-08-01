@@ -1,0 +1,72 @@
+.cosplaySection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1a113c;
+}
+
+.accordionContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.panel {
+  flex-basis: 6vw; 
+  flex-shrink: 1;
+  flex-grow: 0;
+  height: 80vh;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.panel.active {
+  flex-basis: 70vw;
+  max-width: 70vw;
+  height: 90vh;
+}
+
+.panelImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel.active .panelImage {
+  object-fit: contain;
+}
+
+.titleOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.panel.active .titleOverlay {
+  opacity: 1;
+}
+
+.titleOverlay h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
