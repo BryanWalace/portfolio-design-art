@@ -1,6 +1,6 @@
-# RAMD - Portfólio de Artista
+# Portfólio de Artista
 
-Repositório para o site de portfólio interativo de RAMD. O projeto foi iniciado utilizando React e Vite, com uma estrutura preparada para escalabilidade.
+Repositório para o site de portfólio interativo. O projeto foi iniciado utilizando React e Vite, com uma estrutura preparada para escalabilidade.
 
 ## ✨ Funcionalidades
 
